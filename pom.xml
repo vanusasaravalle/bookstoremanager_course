@@ -69,6 +69,14 @@
 			<version>2.4.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/pl.project13.maven/git-commit-id-plugin -->
+		<dependency>
+			<groupId>pl.project13.maven</groupId>
+			<artifactId>git-commit-id-plugin</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+
+
 
 	</dependencies>
 
