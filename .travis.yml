@@ -1,0 +1,15 @@
+dist: xenial
+language: java
+sudo: false
+jdk: openjdk-8-jre
+install: true
+addons:
+  sonarcloud:
+    organization: $SONAR_ORGANIZATION
+    token: $SONAR_TOKEN
+script:
+  - mvn clean package sonar:sonar -P sonar
+cache:
+  directories:
+    - $HOME/.m2
+    - $home/.sonar/cache
