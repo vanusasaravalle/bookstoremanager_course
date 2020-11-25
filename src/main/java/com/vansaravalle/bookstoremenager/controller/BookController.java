@@ -18,7 +18,8 @@ public class BookController {
             @ApiResponse(code = 200, message = "Success method return")
     })
     @GetMapping
-    public String hello(){
-        return "Olá mundo";
+    public String hello()
+    {
+        return "Olá";
     }
 }
