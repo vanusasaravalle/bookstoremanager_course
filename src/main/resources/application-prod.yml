@@ -16,5 +16,6 @@ spring:
 
 logging:
   level:
-    com:
-      vanlog: info
+    br:
+      com:
+        rodrigopeleias: INFO

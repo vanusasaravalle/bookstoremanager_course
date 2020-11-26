@@ -16,5 +16,6 @@ spring:
 
 logging:
   level:
-    com:
-      vanlog: DEBUG
+    br:
+      com:
+        rodrigopeleias: DEBUG
