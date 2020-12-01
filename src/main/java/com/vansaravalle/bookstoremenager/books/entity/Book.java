@@ -5,13 +5,13 @@ import com.vansaravalle.bookstoremenager.entity.Auditable;
 import com.vansaravalle.bookstoremenager.publisher.entity.Publisher;
 import com.vansaravalle.bookstoremenager.user.entity.User;
 import lombok.Data;
-import org.hibernate.engine.internal.Cascade;
+
 
 import javax.persistence.*;
 
 @Data
 @Entity
-public class Book extends Auditablegis {
+public class Book extends Auditable {
 
 
     @Id
