@@ -2,6 +2,7 @@ package com.vansaravalle.bookstoremenager.user.entity;
 
 
 import com.vansaravalle.bookstoremenager.books.entity.Book;
+import com.vansaravalle.bookstoremenager.entity.Auditable;
 import com.vansaravalle.bookstoremenager.user.enums.Gender;
 import lombok.Data;
 
@@ -11,7 +12,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class User {
+public class User extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
