@@ -1,6 +1,7 @@
 package com.vansaravalle.bookstoremenager.books.entity;
 
 import com.vansaravalle.bookstoremenager.author.entity.Author;
+import com.vansaravalle.bookstoremenager.entity.Auditable;
 import com.vansaravalle.bookstoremenager.publisher.entity.Publisher;
 import com.vansaravalle.bookstoremenager.user.entity.User;
 import lombok.Data;
@@ -10,7 +11,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class Book {
+public class Book extends Auditablegis {
 
 
     @Id
