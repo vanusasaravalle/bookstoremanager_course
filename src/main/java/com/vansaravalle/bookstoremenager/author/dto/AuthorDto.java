@@ -1,7 +1,6 @@
 package com.vansaravalle.bookstoremenager.author.dto;
 
-import com.vansaravalle.bookstoremenager.books.entity.Book;
-import lombok.AllArgsConstructor;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,12 +11,10 @@ import javax.validation.constraints.Size;
 
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class AuthorDto {
 
     private Long id;
-
 
     @NotNull
     @NotEmpty
@@ -28,4 +25,10 @@ public class AuthorDto {
     @Max(120)
     private Integer age;
 
+    public AuthorDto(Long id, @NotNull @NotEmpty @Size(max = 255) String name,
+                     @NotNull @Max(120) Integer age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
 }
