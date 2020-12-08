@@ -24,7 +24,7 @@ public class AuthorServiceTeste {
 
     @BeforeEach
     void setUp() {
-        authorDTOBuilder = AuthorDTOBuilder.builder().build;
+        authorDTOBuilder = AuthorDTOBuilder.builder().build();
     }
 
 }
